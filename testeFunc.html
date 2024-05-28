@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista de Nomes Aleatórios</title>
+
+</head>
+<body>
+  <h1>Nomes Aleatórios</h1>
+  <button onclick="randomNameGenerate()">Gerar Nome Aleatório</button>
+  <p>Nome Aleatório: <span id="randomName"></span></p>
+</body>
+<script>
+  function randomNameGenerate() {
+    let names = ["João", "Maria", "Pedro", "Ana", "Lucas", "Mariana", "Carlos", "Laura", "Fernando", "Isabela"];
+    let randomIndex = Math.floor(Math.random() * names.length);
+    let randomName = names[randomIndex];
+    document.getElementById("randomName").textContent = randomName;
+  }
+</script>
+</html>
